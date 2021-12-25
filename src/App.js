@@ -66,7 +66,7 @@ class App extends React.Component {
 			<BrowserRouter>
 				<Header />
 				<Route path="/cards">
-					<EditPage cards={this.state.cards} getData={this.getData} setLoading={this.setLoading} />
+					<EditPage cards={this.state.cards} getData={this.getData} setLoading={this.setLoading} loading={this.state.loading} />
 				</Route>
 				<Route path="/" exact>
 					<PlayPage
