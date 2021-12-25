@@ -26,7 +26,7 @@ class EditPage extends React.Component {
 		menuRef.classList.remove("hidden");
 	};
 	showHideMenu = async (e) => {
-		if (!this.state.loading) {
+		if (!this.props.loading) {
 			const [questionInput, answerInput, menuRef] = [
 				this.questionInput.current,
 				this.answerInput.current,
